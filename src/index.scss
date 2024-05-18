@@ -1,0 +1,74 @@
+@font-face {
+	font-family: 'Roboto';
+	src: url('./fonts/Roboto-Regular.ttf') format('truetype');
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+}
+#app {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	h1 {
+		font-size: 50px;
+		color: #ee7235;
+	}
+}
+
+.cards {
+	display: flex;
+	flex-direction: row;
+	.card {
+		width: 150px;
+		height: 150px;
+		background-size: cover;
+		border-radius: 10px;
+		margin: 10px;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		.card-icon {
+			width: 60px;
+			height: 60px;
+			background-size: cover;
+		}
+	}
+}
+
+.active-card {
+	background-image: url('../public/icons/pause.svg') !important;
+}
+
+#card-summer {
+	background-image: url('../public/summer-bg.jpg');
+}
+
+#summerIcon {
+	background-image: url('../public/icons/sun.svg');
+}
+
+#card-rain {
+	background-image: url('../public/rainy-bg.jpg');
+}
+
+#rainIcon {
+	background-image: url('../public/icons/cloud-rain.svg');
+}
+
+#card-winter {
+	background-image: url('../public/winter-bg.jpg');
+}
+
+#winterIcon {
+	background-image: url('../public/icons/cloud-snow.svg');
+}
+
+#volume-slider {
+	cursor: pointer;
+}
